@@ -42,6 +42,10 @@ const initDB = async () => {
   }
 };
 
+app.get('/', (req, res) => {
+  res.send('Biograd Waiting List API is running');
+});
+
 initDB().then(() => {
   const port = process.env.PORT || 3000;
   app.listen(port, () => console.log(`Server running on ${port}`));
