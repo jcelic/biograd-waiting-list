@@ -21,6 +21,8 @@ https://biograd-waiting-list.netlify.app
 Backend API  
 https://biograd-waiting-list.onrender.com
 
+Note: The backend is hosted on the Render free tier - the first request may take a few seconds while the server wakes up.
+
 ---
 
 # Project Inspiration
@@ -61,6 +63,14 @@ https://lc.ortopedija-biograd.hr/
 - Responsive layout
 - Sticky table header
 - Loading states
+
+---
+
+# Demo Data
+
+For demonstration purposes, only the first few procedures contain scheduled appointments.
+
+The remaining procedures are included to represent the full list of procedures but do not contain manually generated appointment data. Creating realistic schedules for every procedure would require a large amount of manual data entry and was outside the scope of this practice project.
 
 ---
 
