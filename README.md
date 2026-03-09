@@ -102,29 +102,28 @@ Deployment
 
 # Project Structure
 
-biograd-waiting-list/
-│
+## Project Structure
+
+```biograd-waiting-list/
 ├── backend/
-│ ├── config/
-│ ├── controllers/
-│ ├── routes/
-│ ├── seeds/
-│ ├── server.js
-│ └── package.json
-│
+│   ├── config/
+│   ├── controllers/
+│   ├── routes/
+│   ├── seeds/
+│   ├── server.js
+│   └── package.json
 ├── frontend/
-│ ├── src/
-│ │ ├── components/
-│ │ ├── store/
-│ │ ├── App.jsx
-│ │ └── main.jsx
-│ ├── index.html
-│ └── package.json
-│
+│   ├── src/
+│   │   ├── components/
+│   │   ├── store/
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── index.html
+│   └── package.json
 ├── screenshots/
-│
 ├── package.json
 └── README.md
+```
 
 ---
 
@@ -142,7 +141,7 @@ Before running the project locally you need:
 
 Clone the repository
 
-git clone https://github.com/jcelic/biograd-waiting-list.git  
+git clone https://github.com/jcelic/biograd-waiting-list.git
 cd biograd-waiting-list
 
 Install dependencies
@@ -155,11 +154,11 @@ npm run install-all
 
 Create `.env` inside the **backend** folder
 
-PORT=3000  
-PG_USER=your_db_user  
-PG_HOST=localhost  
-PG_DATABASE=your_db_name  
-PG_PORT=5432  
+PORT=3000
+PG_USER=your_db_user
+PG_HOST=localhost
+PG_DATABASE=your_db_name
+PG_PORT=5432
 PG_PASSWORD=your_db_password
 
 Create `.env` inside the **frontend** folder
@@ -178,7 +177,7 @@ Stop the server.
 
 Seed the database
 
-node backend/seeds/procedures.js  
+node backend/seeds/procedures.js
 node backend/seeds/appointments.js
 
 ---
@@ -198,3 +197,7 @@ Frontend will run on
 http://localhost:5173
 
 ---
+
+```
+
+```
