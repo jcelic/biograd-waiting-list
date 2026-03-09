@@ -1,0 +1,68 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  max-height: 100vh;
+  padding: 1rem;
+  background: var(--main-color);
+  overflow-y: auto;
+  z-index: 1001 !important;
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+.navbar ul li {
+  padding: 0.7rem;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  transition: background 0.1s ease;
+  cursor: pointer;
+}
+
+.navbar ul li:hover,
+.navbar ul li.active {
+  background: var(--accent-color);
+  border-radius: 0.4rem;
+}
+
+.closeBtn {
+  display: none;
+}
+
+.navbar.openMobNav {
+  transform: translateX(0);
+}
+
+@media (max-width: 940px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 18.75rem;
+    padding-top: 3rem;
+    padding-bottom: 0.3rem;
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 0.3s;
+  }
+
+  .navbar ul {
+    overflow-y: auto;
+  }
+
+  .closeBtn {
+    display: block;
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+    color: var(--mobNavIcons);
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+
+  .closeBtn:hover {
+    color: var(--mobNavIcons-hover);
+  }
+}

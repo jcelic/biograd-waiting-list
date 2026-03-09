@@ -1,0 +1,29 @@
+:root {
+  --main-color: #fff;
+  --accent-color: #e5e8ea;
+  --mobNavIcons: #5a5959;
+  --mobNavIcons-hover: #000;
+  --input-border: #bcc0c2;
+  --input-border-focus: #7f7e7e;
+  --text-color: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  grid-template-rows: 4rem 1fr;
+  height: 100vh;
+}
+
+@media (max-width: 940px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
