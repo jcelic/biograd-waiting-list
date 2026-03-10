@@ -21,7 +21,7 @@ https://biograd-waiting-list.netlify.app
 Backend API  
 https://biograd-waiting-list.onrender.com
 
-Note: The backend is hosted on the Render free tier - the first request may take a few seconds while the server wakes up.
+Note: The backend is hosted on the Render free tier, so the first request may take some time while the server wakes up.
 
 ---
 
