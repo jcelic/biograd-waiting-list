@@ -1,11 +1,9 @@
 import { create } from 'zustand';
 import axios from 'axios';
 
-// const BASE_URL = 'http://localhost:3000';
-// const BASE_URL = 'https://list-app-new.onrender.com';
 const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
 
-export const useAppStore = create((set, get) => ({
+export const useAppStore = create((set) => ({
   searchValue: '',
   setSearchValue: (value) => set({ searchValue: value }),
 
