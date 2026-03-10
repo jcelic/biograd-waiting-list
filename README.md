@@ -102,8 +102,6 @@ Deployment
 
 # Project Structure
 
-## Project Structure
-
 ```biograd-waiting-list/
 ├── backend/
 │   ├── config/
@@ -141,12 +139,16 @@ Before running the project locally you need:
 
 Clone the repository
 
+```bash
 git clone https://github.com/jcelic/biograd-waiting-list.git
 cd biograd-waiting-list
+```
 
 Install dependencies
 
+```bash
 npm run install-all
+```
 
 ---
 
@@ -154,16 +156,20 @@ npm run install-all
 
 Create `.env` inside the **backend** folder
 
+```env
 PORT=3000
 PG_USER=your_db_user
 PG_HOST=localhost
 PG_DATABASE=your_db_name
 PG_PORT=5432
 PG_PASSWORD=your_db_password
+```
 
 Create `.env` inside the **frontend** folder
 
+```env
 VITE_API_URL=http://localhost:3000
+```
 
 ---
 
@@ -171,14 +177,18 @@ VITE_API_URL=http://localhost:3000
 
 Run the backend once so tables are created
 
+```bash
 npm run dev --prefix backend
+```
 
 Stop the server.
 
 Seed the database
 
+```bash
 node backend/seeds/procedures.js
 node backend/seeds/appointments.js
+```
 
 ---
 
@@ -186,18 +196,8 @@ node backend/seeds/appointments.js
 
 Start frontend and backend together
 
+```bash
 npm start
-
-Backend will run on
-
-http://localhost:3000
-
-Frontend will run on
-
-http://localhost:5173
+```
 
 ---
-
-```
-
-```
