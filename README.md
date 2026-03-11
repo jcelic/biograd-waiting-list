@@ -31,7 +31,7 @@ The idea for this project was inspired by the hospital waiting list page used by
 
 The goal was to recreate a similar interface and functionality using React, Express and PostgreSQL.
 
-Original system:  
+Original page:  
 https://lc.ortopedija-biograd.hr/
 
 ---
