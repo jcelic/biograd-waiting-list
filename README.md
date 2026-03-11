@@ -102,7 +102,8 @@ Deployment
 
 # Project Structure
 
-```biograd-waiting-list/
+```bash
+biograd-waiting-list/
 ├── backend/
 │   ├── config/
 │   ├── controllers/
@@ -186,8 +187,10 @@ Stop the server.
 Seed the database
 
 ```bash
-node backend/seeds/procedures.js
-node backend/seeds/appointments.js
+cd backend
+node seeds/procedures.js
+node seeds/appointments.js
+cd ..
 ```
 
 ---
