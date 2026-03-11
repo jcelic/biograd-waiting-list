@@ -27,7 +27,7 @@ Note: The backend is hosted on the Render free tier, so the first request may ta
 
 # Project Inspiration
 
-The idea for this project was inspired by the hospital waiting list system used by the Special Hospital for Orthopedics in Biograd na Moru.
+The idea for this project was inspired by the hospital waiting list page used by the Special Hospital for Orthopedics in Biograd na Moru.
 
 The goal was to recreate a similar interface and functionality using React, Express and PostgreSQL.
 
