@@ -21,17 +21,17 @@ https://biograd-waiting-list.netlify.app
 Backend API  
 https://biograd-waiting-list.onrender.com
 
-Note: The backend is hosted on the Render free tier - the first request may take a few seconds while the server wakes up.
+Note: The backend is hosted on the Render free tier, so the first request may take some time while the server wakes up.
 
 ---
 
 # Project Inspiration
 
-The idea for this project was inspired by the hospital waiting list system used by the Special Hospital for Orthopedics in Biograd na Moru.
+The idea for this project was inspired by the hospital waiting list page used by the Special Hospital for Orthopedics in Biograd na Moru.
 
 The goal was to recreate a similar interface and functionality using React, Express and PostgreSQL.
 
-Original system:  
+Original page:  
 https://lc.ortopedija-biograd.hr/
 
 ---
@@ -102,9 +102,8 @@ Deployment
 
 # Project Structure
 
-## Project Structure
-
-```biograd-waiting-list/
+```bash
+biograd-waiting-list/
 ├── backend/
 │   ├── config/
 │   ├── controllers/
@@ -141,12 +140,16 @@ Before running the project locally you need:
 
 Clone the repository
 
+```bash
 git clone https://github.com/jcelic/biograd-waiting-list.git
 cd biograd-waiting-list
+```
 
 Install dependencies
 
+```bash
 npm run install-all
+```
 
 ---
 
@@ -154,16 +157,20 @@ npm run install-all
 
 Create `.env` inside the **backend** folder
 
+```env
 PORT=3000
 PG_USER=your_db_user
 PG_HOST=localhost
 PG_DATABASE=your_db_name
 PG_PORT=5432
 PG_PASSWORD=your_db_password
+```
 
 Create `.env` inside the **frontend** folder
 
+```env
 VITE_API_URL=http://localhost:3000
+```
 
 ---
 
@@ -171,14 +178,20 @@ VITE_API_URL=http://localhost:3000
 
 Run the backend once so tables are created
 
+```bash
 npm run dev --prefix backend
+```
 
 Stop the server.
 
 Seed the database
 
-node backend/seeds/procedures.js
-node backend/seeds/appointments.js
+```bash
+cd backend
+node seeds/procedures.js
+node seeds/appointments.js
+cd ..
+```
 
 ---
 
@@ -186,18 +199,8 @@ node backend/seeds/appointments.js
 
 Start frontend and backend together
 
+```bash
 npm start
-
-Backend will run on
-
-http://localhost:3000
-
-Frontend will run on
-
-http://localhost:5173
+```
 
 ---
-
-```
-
-```
