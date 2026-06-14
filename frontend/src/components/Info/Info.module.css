@@ -1,0 +1,208 @@
+.info {
+  min-width: 0;
+  height: 100%;
+  min-height: 0;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  background: var(--main-color);
+  color: var(--text-color);
+  overflow: hidden;
+}
+
+.info h2 {
+  font-weight: 400;
+}
+
+.infoHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.infoHeader .dates {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.infoHeader .dates ul {
+  list-style: none;
+}
+
+.infoHeader input {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  border: 1px solid var(--input-border);
+  border-radius: 0.4rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.infoHeader input:focus {
+  border-color: var(--input-border-focus);
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputBox span {
+  margin-left: 0.5rem;
+  color: red;
+  font-size: 0.9rem;
+}
+
+.infoTable {
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+}
+
+.infoTable table {
+  width: 100%;
+  min-width: 38.75rem;
+  border-spacing: 0;
+  position: relative;
+}
+
+.infoTable thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.infoTable thead th {
+  padding: 0.6rem;
+  background: var(--main-color);
+  white-space: nowrap;
+}
+
+.infoTable table td {
+  padding: 0.6rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.infoTable table tr:nth-child(odd) {
+  background: var(--accent-color);
+}
+
+.infoTable tbody tr {
+  transition: box-shadow 0.15s ease;
+}
+
+.infoTable tbody tr:hover {
+  box-shadow: inset 4px 0 0 #9aa3ad;
+}
+
+.skeletonCount,
+.skeletonDate,
+.skeletonSlot,
+.skeletonCell,
+.skeletonCellSmall,
+.skeletonCellLarge,
+.skeletonTitle {
+  display: inline-block;
+  height: 0.9375rem;
+  background-color: #d9d9d9;
+  border-radius: 0.375rem;
+  animation: pulse 1.5s infinite;
+}
+
+.skeletonTitle {
+  width: 20rem;
+  height: 1.25rem;
+}
+
+.skeletonCount {
+  width: 2.5rem;
+  margin-left: 0.5rem;
+}
+
+.skeletonDate {
+  width: 8.75rem;
+  margin-left: 0.5rem;
+}
+
+.skeletonSlot {
+  width: 10.625rem;
+}
+
+.skeletonCell {
+  width: 8.75rem;
+}
+
+.skeletonCellSmall {
+  width: 5rem;
+}
+
+.skeletonCellLarge {
+  width: 11.875rem;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.errorBox {
+  padding: 1rem;
+
+  border: 1px solid #d6b0b0;
+  border-radius: 0.4rem;
+
+  background: #f5dede;
+  color: #8a1f1f;
+
+  font-weight: 600;
+}
+
+@media (max-width: 1100px) {
+  .infoHeader {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .infoHeader .dates {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .infoHeader .dates ul {
+    display: flex;
+    gap: 0.4rem;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .infoHeader .dates ul li {
+    padding: 0.1rem 0.3rem;
+    background: var(--accent-color);
+    border-radius: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .infoTable table {
+    min-width: 45rem;
+  }
+
+  .infoTable th,
+  .infoTable td {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}

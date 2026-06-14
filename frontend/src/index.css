@@ -1,0 +1,63 @@
+:root {
+  --main-color: #fff;
+  --accent-color: #e5e8ea;
+
+  --mob-nav-icons: #5a5959;
+  --mob-nav-icons-hover: #000;
+
+  --input-border: #bcc0c2;
+  --input-border-focus: #7f7e7e;
+
+  --text-color: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+html,
+body,
+#root {
+  overflow-x: hidden;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 20rem 1fr;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+.overlay.showOverlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (min-width: 1101px) {
+  .overlay {
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .container {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
